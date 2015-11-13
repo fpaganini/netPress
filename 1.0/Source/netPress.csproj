@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7888E5E3-6136-4A02-A21F-F320418DACC2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>br.com.pgnsoft.netCMS.netPress</RootNamespace>
+    <AssemblyName>no-</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="np-admin\css\about-rtl.css" />
+    <Content Include="np-admin\css\about.css" />
+    <Content Include="np-admin\css\admin-menu-rtl.css" />
+    <Content Include="np-admin\css\admin-menu.css" />
+    <Content Include="np-admin\css\color-picker-rtl.css" />
+    <Content Include="np-admin\css\color-picker-rtl.min.css" />
+    <Content Include="np-admin\css\color-picker.css" />
+    <Content Include="np-admin\css\color-picker.min.css" />
+    <Content Include="np-admin\css\common-rtl.css" />
+    <Content Include="np-admin\css\common.css" />
+    <Content Include="np-admin\css\customize-controls-rtl.css" />
+    <Content Include="np-admin\css\customize-controls-rtl.min.css" />
+    <Content Include="np-admin\css\customize-controls.css" />
+    <Content Include="np-admin\css\customize-controls.min.css" />
+    <Content Include="np-admin\css\customize-nav-menus-rtl.css" />
+    <Content Include="np-admin\css\customize-nav-menus-rtl.min.css" />
+    <Content Include="np-admin\css\customize-nav-menus.css" />
+    <Content Include="np-admin\css\customize-nav-menus.min.css" />
+    <Content Include="np-admin\css\customize-widgets-rtl.css" />
+    <Content Include="np-admin\css\customize-widgets-rtl.min.css" />
+    <Content Include="np-admin\css\customize-widgets.css" />
+    <Content Include="np-admin\css\customize-widgets.min.css" />
+    <Content Include="np-admin\css\dashboard-rtl.css" />
+    <Content Include="np-admin\css\dashboard.css" />
+    <Content Include="np-admin\css\deprecated-media-rtl.css" />
+    <Content Include="np-admin\css\deprecated-media-rtl.min.css" />
+    <Content Include="np-admin\css\deprecated-media.css" />
+    <Content Include="np-admin\css\deprecated-media.min.css" />
+    <Content Include="np-admin\css\edit-rtl.css" />
+    <Content Include="np-admin\css\edit.css" />
+    <Content Include="np-admin\css\farbtastic-rtl.css" />
+    <Content Include="np-admin\css\farbtastic.css" />
+    <Content Include="np-admin\css\forms-rtl.css" />
+    <Content Include="np-admin\css\forms.css" />
+    <Content Include="np-admin\css\ie-rtl.css" />
+    <Content Include="np-admin\css\ie-rtl.min.css" />
+    <Content Include="np-admin\css\ie.css" />
+    <Content Include="np-admin\css\ie.min.css" />
+    <Content Include="np-admin\css\install-rtl.css" />
+    <Content Include="np-admin\css\install-rtl.min.css" />
+    <Content Include="np-admin\css\install.css" />
+    <Content Include="np-admin\css\install.min.css" />
+    <Content Include="np-admin\css\l10n-rtl.css" />
+    <Content Include="np-admin\css\l10n.css" />
+    <Content Include="np-admin\css\list-tables-rtl.css" />
+    <Content Include="np-admin\css\list-tables.css" />
+    <Content Include="np-admin\css\login-rtl.css" />
+    <Content Include="np-admin\css\login-rtl.min.css" />
+    <Content Include="np-admin\css\login.css" />
+    <Content Include="np-admin\css\login.min.css" />
+    <Content Include="np-admin\css\media-rtl.css" />
+    <Content Include="np-admin\css\media.css" />
+    <Content Include="np-admin\css\nav-menus-rtl.css" />
+    <Content Include="np-admin\css\nav-menus.css" />
+    <Content Include="np-admin\css\np-admin-rtl.css" />
+    <Content Include="np-admin\css\np-admin-rtl.min.css" />
+    <Content Include="np-admin\css\np-admin.css" />
+    <Content Include="np-admin\css\np-admin.min.css" />
+    <Content Include="np-admin\css\press-this-editor-rtl.css" />
+    <Content Include="np-admin\css\press-this-editor.css" />
+    <Content Include="np-admin\css\press-this-rtl.css" />
+    <Content Include="np-admin\css\press-this-rtl.min.css" />
+    <Content Include="np-admin\css\press-this.css" />
+    <Content Include="np-admin\css\press-this.min.css" />
+    <Content Include="np-admin\css\revisions-rtl.css" />
+    <Content Include="np-admin\css\revisions.css" />
+    <Content Include="np-admin\css\site-icon-rtl.css" />
+    <Content Include="np-admin\css\site-icon.css" />
+    <Content Include="np-admin\css\themes-rtl.css" />
+    <Content Include="np-admin\css\themes.css" />
+    <Content Include="np-admin\css\widgets-rtl.css" />
+    <Content Include="np-admin\css\widgets.css" />
+    <Content Include="np-admin\default.aspx" />
+    <Content Include="np-admin\images\align-center-2x.png" />
+    <Content Include="np-admin\images\align-center.png" />
+    <Content Include="np-admin\images\align-left-2x.png" />
+    <Content Include="np-admin\images\align-left.png" />
+    <Content Include="np-admin\images\align-none-2x.png" />
+    <Content Include="np-admin\images\align-none.png" />
+    <Content Include="np-admin\images\align-right-2x.png" />
+    <Content Include="np-admin\images\align-right.png" />
+    <Content Include="np-admin\images\arrows-2x.png" />
+    <Content Include="np-admin\images\arrows.png" />
+    <Content Include="np-admin\images\browser.png" />
+    <Content Include="np-admin\images\bubble_bg-2x.gif" />
+    <Content Include="np-admin\images\bubble_bg.gif" />
+    <Content Include="np-admin\images\comment-grey-bubble-2x.png" />
+    <Content Include="np-admin\images\comment-grey-bubble.png" />
+    <Content Include="np-admin\images\date-button-2x.gif" />
+    <Content Include="np-admin\images\date-button.gif" />
+    <Content Include="np-admin\images\generic.png" />
+    <Content Include="np-admin\images\icons32-2x.png" />
+    <Content Include="np-admin\images\icons32-vs-2x.png" />
+    <Content Include="np-admin\images\icons32-vs.png" />
+    <Content Include="np-admin\images\icons32.png" />
+    <Content Include="np-admin\images\imgedit-icons-2x.png" />
+    <Content Include="np-admin\images\imgedit-icons.png" />
+    <Content Include="np-admin\images\list-2x.png" />
+    <Content Include="np-admin\images\list.png" />
+    <Content Include="np-admin\images\loading.gif" />
+    <Content Include="np-admin\images\marker.png" />
+    <Content Include="np-admin\images\mask.png" />
+    <Content Include="np-admin\images\media-button-2x.png" />
+    <Content Include="np-admin\images\media-button-image.gif" />
+    <Content Include="np-admin\images\media-button-music.gif" />
+    <Content Include="np-admin\images\media-button-other.gif" />
+    <Content Include="np-admin\images\media-button-video.gif" />
+    <Content Include="np-admin\images\media-button.png" />
+    <Content Include="np-admin\images\menu-2x.png" />
+    <Content Include="np-admin\images\menu-vs-2x.png" />
+    <Content Include="np-admin\images\menu-vs.png" />
+    <Content Include="np-admin\images\menu.png" />
+    <Content Include="np-admin\images\netpress-logo.png" />
+    <Content Include="np-admin\images\no.png" />
+    <Content Include="np-admin\images\post-formats-vs.png" />
+    <Content Include="np-admin\images\post-formats.png" />
+    <Content Include="np-admin\images\post-formats32-vs.png" />
+    <Content Include="np-admin\images\post-formats32.png" />
+    <Content Include="np-admin\images\resize-2x.gif" />
+    <Content Include="np-admin\images\resize-rtl-2x.gif" />
+    <Content Include="np-admin\images\resize-rtl.gif" />
+    <Content Include="np-admin\images\resize.gif" />
+    <Content Include="np-admin\images\se.png" />
+    <Content Include="np-admin\images\sort-2x.gif" />
+    <Content Include="np-admin\images\sort.gif" />
+    <Content Include="np-admin\images\spinner-2x.gif" />
+    <Content Include="np-admin\images\spinner.gif" />
+    <Content Include="np-admin\images\stars-2x.png" />
+    <Content Include="np-admin\images\stars.png" />
+    <Content Include="np-admin\images\w-logo-blue.png" />
+    <Content Include="np-admin\images\w-logo-white.png" />
+    <Content Include="np-admin\images\wheel.png" />
+    <Content Include="np-admin\images\wpspin_light-2x.gif" />
+    <Content Include="np-admin\images\wpspin_light.gif" />
+    <Content Include="np-admin\images\xit-2x.gif" />
+    <Content Include="np-admin\images\xit.gif" />
+    <Content Include="np-admin\images\yes.png" />
+    <Content Include="np-admin\js\accordion.js" />
+    <Content Include="np-admin\js\accordion.min.js" />
+    <Content Include="np-admin\js\bookmarklet.js" />
+    <Content Include="np-admin\js\bookmarklet.min.js" />
+    <Content Include="np-admin\js\color-picker.js" />
+    <Content Include="np-admin\js\color-picker.min.js" />
+    <Content Include="np-admin\js\comment.js" />
+    <Content Include="np-admin\js\comment.min.js" />
+    <Content Include="np-admin\js\common.js" />
+    <Content Include="np-admin\js\common.min.js" />
+    <Content Include="np-admin\js\custom-background.js" />
+    <Content Include="np-admin\js\custom-background.min.js" />
+    <Content Include="np-admin\js\custom-header.js" />
+    <Content Include="np-admin\js\customize-controls.js" />
+    <Content Include="np-admin\js\customize-controls.min.js" />
+    <Content Include="np-admin\js\customize-nav-menus.js" />
+    <Content Include="np-admin\js\customize-nav-menus.min.js" />
+    <Content Include="np-admin\js\customize-widgets.js" />
+    <Content Include="np-admin\js\customize-widgets.min.js" />
+    <Content Include="np-admin\js\dashboard.js" />
+    <Content Include="np-admin\js\dashboard.min.js" />
+    <Content Include="np-admin\js\edit-comments.js" />
+    <Content Include="np-admin\js\edit-comments.min.js" />
+    <Content Include="np-admin\js\editor-expand.js" />
+    <Content Include="np-admin\js\editor-expand.min.js" />
+    <Content Include="np-admin\js\editor.js" />
+    <Content Include="np-admin\js\editor.min.js" />
+    <Content Include="np-admin\js\farbtastic.js" />
+    <Content Include="np-admin\js\gallery.js" />
+    <Content Include="np-admin\js\gallery.min.js" />
+    <Content Include="np-admin\js\image-edit.js" />
+    <Content Include="np-admin\js\image-edit.min.js" />
+    <Content Include="np-admin\js\inline-edit-post.js" />
+    <Content Include="np-admin\js\inline-edit-post.min.js" />
+    <Content Include="np-admin\js\inline-edit-tax.js" />
+    <Content Include="np-admin\js\inline-edit-tax.min.js" />
+    <Content Include="np-admin\js\iris.min.js" />
+    <Content Include="np-admin\js\language-chooser.js" />
+    <Content Include="np-admin\js\language-chooser.min.js" />
+    <Content Include="np-admin\js\link.js" />
+    <Content Include="np-admin\js\link.min.js" />
+    <Content Include="np-admin\js\media-gallery.js" />
+    <Content Include="np-admin\js\media-gallery.min.js" />
+    <Content Include="np-admin\js\media-upload.js" />
+    <Content Include="np-admin\js\media-upload.min.js" />
+    <Content Include="np-admin\js\media.js" />
+    <Content Include="np-admin\js\media.min.js" />
+    <Content Include="np-admin\js\nav-menu.js" />
+    <Content Include="np-admin\js\nav-menu.min.js" />
+    <Content Include="np-admin\js\np-fullscreen-stub.js" />
+    <Content Include="np-admin\js\np-fullscreen-stub.min.js" />
+    <Content Include="np-admin\js\password-strength-meter.js" />
+    <Content Include="np-admin\js\password-strength-meter.min.js" />
+    <Content Include="np-admin\js\plugin-install.js" />
+    <Content Include="np-admin\js\plugin-install.min.js" />
+    <Content Include="np-admin\js\post.js" />
+    <Content Include="np-admin\js\post.min.js" />
+    <Content Include="np-admin\js\postbox.js" />
+    <Content Include="np-admin\js\postbox.min.js" />
+    <Content Include="np-admin\js\press-this.js" />
+    <Content Include="np-admin\js\press-this.min.js" />
+    <Content Include="np-admin\js\revisions.js" />
+    <Content Include="np-admin\js\revisions.min.js" />
+    <Content Include="np-admin\js\set-post-thumbnail.js" />
+    <Content Include="np-admin\js\set-post-thumbnail.min.js" />
+    <Content Include="np-admin\js\svg-painter.js" />
+    <Content Include="np-admin\js\svg-painter.min.js" />
+    <Content Include="np-admin\js\tags-box.js" />
+    <Content Include="np-admin\js\tags-box.min.js" />
+    <Content Include="np-admin\js\tags.js" />
+    <Content Include="np-admin\js\tags.min.js" />
+    <Content Include="np-admin\js\theme.js" />
+    <Content Include="np-admin\js\theme.min.js" />
+    <Content Include="np-admin\js\updates.js" />
+    <Content Include="np-admin\js\updates.min.js" />
+    <Content Include="np-admin\js\user-profile.js" />
+    <Content Include="np-admin\js\user-profile.min.js" />
+    <Content Include="np-admin\js\user-suggest.js" />
+    <Content Include="np-admin\js\user-suggest.min.js" />
+    <Content Include="np-admin\js\widgets.js" />
+    <Content Include="np-admin\js\widgets.min.js" />
+    <Content Include="np-admin\js\word-count.js" />
+    <Content Include="np-admin\js\word-count.min.js" />
+    <Content Include="np-admin\js\xfn.js" />
+    <Content Include="np-admin\js\xfn.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="np-admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="np-admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="np-admin\includes\load.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="np-admin\css\colors\" />
+    <Folder Include="np-admin\maint\" />
+    <Folder Include="np-admin\network\" />
+    <Folder Include="np-admin\user\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52809</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52809/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
